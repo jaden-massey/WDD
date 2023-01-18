@@ -1,0 +1,30 @@
+/* Element selctors */
+h1:nth-child(1),
+p:nth-child(3) {
+    color: blue;
+}
+
+h1 {
+    color: yellow;
+}
+
+/* ID Selector */
+#bigText {
+    font-size: 500%;
+    color: purple;
+}
+
+/* Class selectors */
+.redText {
+    color: red;
+}
+
+.borderedText {
+    border: 1px solid rgb(163, 0, 0);
+    width: 1000px;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
