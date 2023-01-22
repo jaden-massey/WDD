@@ -1,0 +1,24 @@
+img
+{
+    width: 200px;
+}
+
+
+a 
+{
+display: block;
+color: pink;
+}
+
+nav
+{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.centered_image
+{
+    border-radius: 60%;
+    margin: 0 auto;
+    display: block;
+}
