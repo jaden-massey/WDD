@@ -1,0 +1,90 @@
+div {
+    background-color: #faa7c9;
+    padding: 25px;
+}
+
+body {
+    margin: 50px;
+}
+
+.eduTitle {
+margin: 0 auto;
+width: 50%;
+text-align: center;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 25px;
+}
+
+h1:hover {
+    color: black;
+}
+
+.quote_1 {
+    font-size: small;
+    max-width: 400px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.author_1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 500%;
+    margin-bottom: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+.olist {
+    text-align: center;
+    margin-left: -25px;
+}
+
+.list {
+    display: inline-block;
+    text-align: left;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 100%;
+    margin-bottom: 0;
+}
+
+.quote_2 {
+    font-size: 200%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 275px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.bottomText_1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottomText_2 {
+    margin-top: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
