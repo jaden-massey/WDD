@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300&display=swap');
+/* "Sofia Sans Semi Condensed";
+--paragraph-font: Lato, Helvetica, sans-serif; */
+
 #id {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +11,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -24,22 +29,33 @@ nav a:hover {
 
 .logo {
     width: 80px;
+    border-radius: 50%;
 }
 
 .card-img {
     width: 500px;
+    border: 10px solid #219EBC;
 }
 
 .button-box {
     text-align: center;
 }
 
+
+
 .home-title {
     color: #219EBC;
+    font-family: "Sofia Sans Semi Condensed";
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 main section {
     text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 #background {
@@ -50,10 +66,15 @@ main section {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 body {
     background-color: beige;
+    font-size: 22px;
+    font-family: 'Lato', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -64,10 +85,18 @@ h4 {
     color: #219EBC;
 }
 
+h2 {
+    margin: 0;
+}
+
 .book, .join {
     background-color: #219EBC;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -79,19 +108,35 @@ h4 {
 .msg {
     background-color: #219EBC;
     color: #219EBC;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 200px;
 }
 
 .msg h2 {
     color: #219EBC;
+    font-family: "Sofia Sans Semi Condensed", Arial, 'Times New Roman';
 }
 
 .msg p {
     color: white;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
 footer {
     background-color: #023047;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -113,4 +158,8 @@ footer a img {
 
 footer a:hover {
     color: #FFCC4D;
+}
+
+footer .social img {
+    padding-top: 15px;
 }

@@ -1,0 +1,44 @@
+.item1 {
+    height: 100px;
+    grid-area: header;
+    background-color: black;
+}
+
+.item2 {
+    height: 350px;
+    grid-area: menu;
+    background-color: aqua;
+}
+
+.item3 {
+    height: 200px;
+    grid-area: main;
+    background-color: violet;
+}
+
+.item4 {
+    height: 200px;
+    grid-area: right;
+    background-color: orange;
+}
+
+.item5 {
+    height: 100px;
+    grid-area: footer;
+    background-color: greenyellow;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header header header'
+        'menu menu main main main main right right'
+        'menu menu footer footer footer footer footer footer';
+    gap: 10px;
+    padding: 10px;
+}
+
+.wrapper > div {
+    text-align: center;
+    padding: 20px 0;
+}

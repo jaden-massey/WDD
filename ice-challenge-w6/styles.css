@@ -1,0 +1,22 @@
+body {
+    height: 50vh;
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    gap: 0px;
+    width: 100%;
+    grid-template-areas: 
+    'left left right right'
+    'left left right right';
+}
+
+.item1 {
+    -;
+}
+
+.wrapper > div {
+    text-align: center;
+    padding: 20px 0;
+}
