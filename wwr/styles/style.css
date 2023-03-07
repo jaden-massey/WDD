@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300&display=swap');
 /* "Sofia Sans Semi Condensed";
 --paragraph-font: Lato, Helvetica, sans-serif; */
-
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
 #id {
     max-width: 1600px;
     margin: 0 auto;
@@ -231,6 +236,174 @@ footer a:hover {
 
 footer .social img {
     padding-top: 15px;
+}
+
+/* Rivers Page CSS */
+#content1 {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/* slideshow */
+.ss {
+    display: none;
+}
+
+.ss-img {
+    vertical-align: middle;
+    width: 100%;
+    height: 500px;
+}
+
+.ss-container {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: -100px;
+  z-index: -1;
+}
+
+.ss-text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.ss-numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* grid + remaining page */
+.rivers-grid {
+    margin-top: 50px;
+    display: grid;
+    gap: 50px;
+    line-height: 1.5em;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 20px 1fr 20px 1fr 20px;
+}
+
+.rivers-grid p {
+    font-size: 0.8em;
+}
+
+.rivers-grid h2 {
+    font-family: "Sofia Sans Semi Condensed", Arial, 'Times New Roman';
+}
+
+.salmon-card {
+    grid-column: 1/9;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+}
+
+.gray-card {
+    grid-column: 1/9;
+    grid-row: 3;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+}
+
+.grand-card {
+    grid-column: 1/9;
+    grid-row: 5;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+}
+
+.rivers-div-line1, .rivers-div-line2, .rivers-div-line3 {
+    background-color: #219EBC;
+    width: 50%;
+    justify-self: center;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.rivers-div-line1 {
+    grid-row: 2;
+    grid-column: 1/9;
+}
+
+.rivers-div-line2 {
+    grid-row: 4;
+    grid-column: 1/9;
+}
+
+.rivers-div-line3 {
+    grid-row: 6;
+    grid-column: 1/9;
+}
+
+.salmon-text, .gray-text, .grand-text {
+    text-align: center;
+}
+
+.salmon-card, .gray-card, .grand-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.rivers-grid img {
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    border: 5px solid #FFCC4D;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.salmon-text, .gray-text, .grand-text {
+    justify-self: center;
+    align-self: center;
+}
+
+.salmon-text, .grand-text {
+    grid-column: 1 / span 2;
+    text-align: right;
+}
+
+.salmon-img, .grand-img {
+    grid-column: 3;
+}
+
+.gray-text {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    text-align: left;
+}
+.gray-img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .ss-text {font-size: 11px}
 }
 
 @media screen and (max-width: 900px) {
