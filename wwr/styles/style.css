@@ -252,7 +252,7 @@ footer .social img {
 .ss-img {
     vertical-align: middle;
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 
 .ss-container {
@@ -317,7 +317,8 @@ footer .social img {
     grid-row: 1;
     margin-left: auto;
     margin-right: auto;
-    width: 1300px;
+    width: 70%;
+    max-width: 1300px;
 }
 
 .gray-card {
@@ -325,7 +326,8 @@ footer .social img {
     grid-row: 3;
     margin-left: auto;
     margin-right: auto;
-    width: 1300px;
+    width: 70%;
+    max-width: 1300px;
 }
 
 .grand-card {
@@ -333,13 +335,16 @@ footer .social img {
     grid-row: 5;
     margin-left: auto;
     margin-right: auto;
-    width: 1300px;
+    width: 70%;
+    max-width: 1300px;
 }
 
 .rivers-div-line1, .rivers-div-line2, .rivers-div-line3 {
     background-color: #219EBC;
     width: 50%;
     justify-self: center;
+    align-items: center;
+    margin: auto;
     border-radius: 5px;
     height: 10px;
 }
@@ -347,6 +352,8 @@ footer .social img {
 .rivers-div-line1 {
     grid-row: 2;
     grid-column: 1/9;
+    justify-self: center;
+    align-items: center;
 }
 
 .rivers-div-line2 {
@@ -370,7 +377,8 @@ footer .social img {
 }
 
 .rivers-grid img {
-    height: 80%;
+    width: 100%;
+    max-height: 600px;
     justify-self: center;
     align-self: center;
     border: 5px solid #FFCC4D;
@@ -407,10 +415,28 @@ footer .social img {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .rivers-grid, .salmon-card, .gray-card, .grand-card {
         display: block;
         height: auto;
     }
+
+    .salmon-text, .gray-text, .grand-text {
+        text-align: center;
+    }
+
+    .rivers-div-line1, .rivers-div-line2, .rivers-div-line3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ss-container {
+        margin-top: 0;
+    }
+
+    .ss-img {
+        max-height: 200px;
+    }
+
     nav, footer {
         flex-direction: column;
     }
@@ -443,6 +469,14 @@ footer .social img {
         display: block;
         margin: 0 auto;
     }
+
+    .rivers-grid img {
+        height: 80%;
+        width: 80%;
+        max-height: 400px;
+        max-width: 400px;
+    }
+
     footer {
         margin-top: 25px;
     }
