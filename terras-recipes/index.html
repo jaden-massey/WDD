@@ -11,10 +11,10 @@
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="./images/logo.png" alt="logo" title="Home page">
-                <p class="logo-text">Terra's Recipes</p>
-            </a>
+            <div class="logo-div">
+            <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo" title="Home page"></a>
+            <a href="index.html"><p class="logo-text">Terra's Recipes</p></a>
+            </div>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="#">Recipes</a>
@@ -26,7 +26,6 @@
             <div class="ss fade">
             <div class="ss-numbertext">1 / 2</div>
             <a href="horchata.html" target="_blank"><img class="ss-img" src="./images/banner-horchata.jpg" alt="Horchata banner" title="Horchata"></a>
-            <div class="ss-text">Horchata</div>
             <div class="overlay">
                 <h4 class="overlay-header">Authentic Mexican Horchata</h4>
                 <div class="overlay-line"></div>
@@ -37,7 +36,6 @@
             <div class="ss fade">
             <div class="ss-numbertext">2 / 2</div>
             <a href="eggdrop.html" target="_blank"><img class="ss-img" src="./images/banner-eggdrop.jpg" alt="Egg Drop Soup banner" title="Egg Drop Soup"></a>
-            <div class="ss-text">Egg Drop Soup</div>
             <div class="overlay">
                 <h4 class="overlay-header">Egg Drop Soup with Corn</h4>
                 <div class="overlay-line"></div>
@@ -49,7 +47,7 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
-        <div style="text-align:center">
+        <div class="dots" style="text-align:center">
             <span class="dot" onclick="currentSlide(0)"></span>
             <span class="dot" onclick="currentSlide(1)"></span>
         </div>
