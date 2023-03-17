@@ -37,6 +37,7 @@ header {
 
 .logo-text {
     width: 100px;
+    text-decoration: none;
 }
 
 .logo-div {
@@ -96,10 +97,11 @@ header {
 }
 
 .overlay {
-    background-color: rgba(40, 54, 24, 0.8);
+    display: grid;
+    grid-template-rows: 1fr 1fr 30px 10px 1fr 1fr 5fr 1fr 1fr;
+    background-color: rgba(96, 108, 56, 0.8);
     width: 200px;
     height: 100%;
-    display: block;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -108,30 +110,34 @@ header {
 
 }
 
-.overlay-line {
-    background-color: #DDA15E;
-    border-radius: 25px;
-    height: 5px;
-    width: 150px;
-    margin: 0 auto;
-}
-
 .overlay-text, .overlay-header {
     color: rgba(254, 250, 224, 1);
     text-align: center;
 }
 
+.overlay-line {
+    background-color: #DDA15E;
+    border-radius: 25px;
+    height: 5px;
+    width: 150px;
+    margin: auto;
+    grid-row: 4;
+}
+
 .overlay-header {
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    grid-row: 3;
+    align-self: bottom;
 }
 
 .overlay-text {
-    margin-bottom: 10px;
     width: 150px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    grid-row: 5/8;
+    padding: 0;
+    margin-top: 10px;
+    align-self: self-start;
 }
 
 .dot {
@@ -139,7 +145,6 @@ header {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    margin-bottom: 50px;
     background-color: #999999;
     border-radius: 50%;
     display: inline-block;
@@ -148,31 +153,6 @@ header {
 
 .active, .dot:hover {
     background-color: #111111;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-      opacity: .4
-    }
-    to {
-      opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-      opacity: .4
-    }
-    to {
-      opacity: 1
-    }
 }
 
 @media only screen and (max-width: 300px) {
