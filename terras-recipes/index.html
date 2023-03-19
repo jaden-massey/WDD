@@ -12,8 +12,10 @@
     <div id="content">
         <header>
             <div class="logo-div">
-            <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo" title="Home page"></a>
-            <a class="logo-text" href="index.html"><p>Terra's Recipes</p></a>
+                <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo" title="Home page"></a>
+                <div class="logo-text-div">
+                <a class="logo-text" href="index.html"><p>Terra's Recipes</p></a>
+                </div>
             </div>
             <nav>
                 <a href="index.html">Home</a>
@@ -56,13 +58,11 @@
         <main class="main-grid">
 
             <div class="about-me">
+                <img class="about-me-img" src="./images/TRHome1.jpg" alt="Recipe Book">
                 <section class="about-me-text">
                     <h1 class="ab-title">About Me</h1>
                     <p>The idea behind my website is to offer a simple and easy way to locate recipes for both meals and drinks. In addition, I just hope to use this as a personal catalog for my own recipes, so that I can share my recipes with friends and family and access the recipes I frequent at any time and at any place. I hope to include recipes that are fairly simple, and those that may be more complicated and may make use of more exotic ingredients. I also want to keep this site very simple and easy to access rather than obfuscating its purpose by including unnecessary details and background behind the dish, and instead providing the recipe straight away, and including the notes below that go into detail about possible substitutions and adjustments that can be made to either change the flavor, texture, or accessibility of the dish to certain diets.</p>
                 </section>
-                <div class="about-me-img">
-                    <img src="./images/TRHome1.jpg" alt="Recipe Book">
-                </div>
             </div>
 
             <div class="main-line"></div>
@@ -72,42 +72,46 @@
 
                 <div class="feat-recipe-card">
                     <img src="./images/Placeholder.png" alt="Placeholder">
-                    <h3>Placeholder Title</h3>
-                    <div class="feat-line"></div>
-                    <p>Placeholder description paragraph</p>
+                    <div class="feat-text">
+                        <h3>Placeholder Title</h3>
+                        <div class="feat-line"></div>
+                        <p>Placeholder description paragraph</p>
+                    </div>
                 </div>
 
                 <div class="runner-up-recipes">
-                    <img src="./images/Horchata1.png" alt="Horchata">
-                    <a href="horchata.html"><div class="recipe-card-sub">
-                        <h3>Authentic Mexican Horchata</h3>
-                    </div></a>
-                    <img src="./images/EggDropSoup2.png" alt="Egg drop soup">
-                    <a href="eggdrop.html"><div class="recipe-card-sub">
-
-                        <h3>Egg Drop Soup with Sweet Corn</h3>
-                    </div></a>
-                    <img src="./images/Placeholder.png" alt="placeholder">
-                    <a href="#"><div class="recipe-card-sub">
-                        <h3>Placeholder</h3>
-                    </div></a>
+                    <img class="img1 transform" src="./images/Horchata1.png" alt="Horchata">
+                    <div class="card1 transform"><a href="horchata.html">Authentic Mexican Horchata</a></div>
+                    
+                    <img class="img2 transform" src="./images/EggDropSoup2.png" alt="Egg drop soup">
+                    <div class="card2 transform"><a>Egg Drop Soup with Sweet Corn</a></div>
+                    
+                    <img class="img3 transform" src="./images/Placeholder.png" alt="placeholder">
+                    <div class="card3 transform"><a href="#">Placeholder</a></div>
                 </div>
             </section>
         </main>
         <footer>
-            <p>Terra's Recipes &copy; 2022 - Jaden Massey</p>
-            <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
-            <p><a href="#">Contact Us</a></p>
+            <div class="links">
+                <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+            <p class="credits">Terra's Recipes &copy; 2022 - Jaden Massey</p>
             <div class="socials">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
+                <div class="icon1">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="fb icon"></a>
+                </div>
+                <p class="text1"><a href="https://facebook.com" target="_blank">Facebook</a></p>
+                
+                <div class="icon2">
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter icon"></a>
+                </div>
+                <p class="text2"><a href="https://twitter.com" target="_blank">Twitter</a></p>
+                
+                <div class="icon3">
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
+                </div>
+                <p class="text3"><a href="https://instagram.com" target="_blank">Instagram</a></p>
             </div>
         </footer>
     </div>
