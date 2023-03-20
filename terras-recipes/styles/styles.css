@@ -221,7 +221,7 @@ footer {
     margin: 0 auto;
     margin-bottom: 10px;
     grid-row: 3;
-    align-self: bottom;
+    align-self: self-end;
 }
 
 .overlay-text {
