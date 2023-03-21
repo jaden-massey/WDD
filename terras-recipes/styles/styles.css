@@ -260,7 +260,7 @@ footer {
 }
 
 .about-me-text {
-    background-color: rgba(188, 108, 37, 1);
+    background-color: rgba(170, 97, 34, 1);
     color: rgba(254, 250, 224, 1);
     width: 50%;
     height: 90%;
@@ -388,7 +388,7 @@ footer {
 
 .card1, .card2, .card3 {
     grid-column: 2/10;
-    background-color: rgba(188, 108, 37, 1);
+    background-color: rgba(170, 97, 34, 1);
     width: 80%;
     height: 80%;
     justify-self: center;
